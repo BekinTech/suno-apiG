@@ -17,5 +17,5 @@ ENV SUNO_COOKIE=${SUNO_COOKIE}
 
 RUN npm install --only=production
 COPY --from=builder /src/.next ./.next
-EXPOSE 3000
+EXPOSE 8080
 CMD ["npm", "run", "start"]
